@@ -6,20 +6,12 @@ Summary:	Parse gdb machine interface output with Python
 URL:		https://pypi.org/project/pygdbmi/
 License:	MIT
 Group:		Development/Python
+BuildSystem:	python
 BuildRequires:	python%{pyver}dist(pip)
 BuildArch:	noarch
 
 %description
 Parse gdb machine interface output with Python
-
-%prep
-%autosetup -p1 -n pygdbmi-%{version}
-
-%build
-%py_build
-
-%install
-%py_install
 
 %files
 %{py_sitedir}/pygdbmi
